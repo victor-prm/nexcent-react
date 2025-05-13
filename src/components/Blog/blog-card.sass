@@ -1,0 +1,20 @@
+@use '../../style/base'
+@use '../../style/layout'
+
+.market-fit-card
+    @extend %fxcol
+    align-items: center
+    width: 33%
+    height: 100%
+    gap: base.$unit-1x
+    padding: base.$unit-2x base.$unit-1x
+    border-radius: base.$unit-1x
+
+    box-shadow: 0 2px 4px rgba(#ABBED1,0.2)
+
+    &>*
+        width: fit-content
+        text-align: center
+
+    &>p
+        font-size: 0.75rem
