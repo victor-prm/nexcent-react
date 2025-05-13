@@ -1,7 +1,6 @@
 import './stats-item.sass'
 function MarketFitCard(props) {
     let { icon, number, text } = props.data
-    console.log(props)
 
     return (
         <li className="stats-card">

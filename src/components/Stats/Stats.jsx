@@ -39,7 +39,7 @@ function Stats() {
                 <p>We reached here with our hard work and dedication</p>
             </hgroup>
             <ul className='stats__list'>
-                {stats.map(stat => (<MarketFitCard data={stat} />))}
+                {stats.map((stat,index)=> (<MarketFitCard key={index} data={stat} />))}
             </ul>
         </section>
     )

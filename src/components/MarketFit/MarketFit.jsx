@@ -32,7 +32,7 @@ function MarketFit() {
                 <p>Who is Nextcent suitable for?</p>
             </hgroup>
             <ul className='market-fit__list'>
-                {cards.map(card => (<MarketFitCard data={card} />))}
+                {cards.map((card, index) => (<MarketFitCard key={index} data={card} />))}
             </ul>
         </section>
     )

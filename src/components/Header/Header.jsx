@@ -24,7 +24,7 @@ function Header() {
         <header className='header'>
             <img className='header__logo' src={logo} alt="" />
             <nav className='header__nav'>
-                {links.map(link => (<HeaderLink data={link} />))}
+                {links.map((link,index) => (<HeaderLink key={index} data={link} />))}
             </nav>
             <div className='header__btn-wrapper'>
                 <button className='header__btn'>Login</button>

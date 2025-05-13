@@ -1,6 +1,5 @@
 function HeaderLink(props) {
     let { text, href } = props.data
-    console.log(props)
 
     return (
         <div>
