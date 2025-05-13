@@ -1,4 +1,4 @@
-import './stats-item.sass'
+import './stats-card.sass'
 function MarketFitCard(props) {
     let { icon, number, text } = props.data
 

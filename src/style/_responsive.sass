@@ -1,0 +1,18 @@
+@use 'sass:map'
+
+$breakpoints: (
+  xs: 480px,
+  s: 600px,
+  md: 768px,
+  l: 1024px,
+  xl: 1280px
+)
+
+@mixin respond($breakpoint)
+  $value: map.get($breakpoints, $breakpoint)
+
+  @if $value == null
+    @error "No value found for #{$breakpoint} in $breakpoints map."
+
+  @media (max-width: $value)
+    @content

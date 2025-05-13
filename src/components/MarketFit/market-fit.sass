@@ -1,8 +1,12 @@
 @use '../../style/base.sass'
 @use '../../style/layout'
+@use '../../style/responsive.sass' as respond
 .market-fit
     @include layout.section-padding($fx-direction: column)
 
     &__list
         @extend %fxrow
         gap: base.$unit-2x
+
+        @include respond.respond(md)
+            flex-direction: column

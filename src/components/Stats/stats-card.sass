@@ -1,11 +1,13 @@
 @use '../../style/base'
 @use '../../style/layout'
+@use '../../style/responsive.sass' as respond
 
 .stats-card
     @extend %fxrow
     align-items: center
+    justify-content: center
     height: base.$unit-8x
-    width: 48%
+    width: 40%
     gap: base.$unit-1x
     padding: base.$unit-2x base.$unit-1x
 
@@ -21,3 +23,6 @@
 
     &>hgroup>p
         font-size: 0.75rem
+
+    @include respond.respond(md)
+        width: 48%

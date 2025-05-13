@@ -1,5 +1,6 @@
 @use '../../style/base'
 @use '../../style/layout'
+@use '../../style/responsive.sass' as respond
 .stats
     @include layout.section-padding($fx-direction: row)
     align-items: center
@@ -14,3 +15,8 @@
     &__text-container
         @extend %fxcol
         gap: base.$unit-1x
+
+    @include respond.respond(md)
+        flex-direction: column
+        &>*>*
+            width: 100%
