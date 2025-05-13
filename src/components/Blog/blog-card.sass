@@ -1,20 +1,35 @@
 @use '../../style/base'
 @use '../../style/layout'
 
-.market-fit-card
-    @extend %fxcol
-    align-items: center
-    width: 33%
-    height: 100%
+.blog-card
+    display: grid
     gap: base.$unit-1x
-    padding: base.$unit-2x base.$unit-1x
-    border-radius: base.$unit-1x
-
-    box-shadow: 0 2px 4px rgba(#ABBED1,0.2)
+    height: 14rem
 
     &>*
         width: fit-content
         text-align: center
+        grid-area: 1/1
 
-    &>p
-        font-size: 0.75rem
+    &__img
+        width: 100%
+
+    &__title-container
+        @extend %fxcol
+        gap: base.$unit-1x
+        padding: base.$unit-2x
+        margin: 0 base.$unit-1x
+        background: base.$gray-050
+        border-radius: base.$unit-1x
+        height: 6rem
+        justify-content: space-between
+        place-self: end
+
+        box-shadow: 0 8px 16px rgba(#ABBED1,0.4)
+
+        &>h3
+            font-size: 0.8rem
+        &>a
+            font-size: 0.8rem
+            color: base.$color-primary
+            text-decoration: none

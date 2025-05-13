@@ -7,6 +7,7 @@ function BlogCard(props) {
             <img className="blog-card__img" src={img} alt="" />
             <hgroup className="blog-card__title-container">
                 <h3 className="blog-card__title">{title}</h3>
+                <a href="#">Read more →</a>
             </hgroup>
         </li>
     )

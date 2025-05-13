@@ -23,8 +23,8 @@ function Blog() {
     return (
         <section className='blog'>
             <hgroup className='section-headline'>
-                <h2>Manage your entire community in a single system</h2>
-                <p>Who is Nextcent suitable for?</p>
+                <h2>Caring is the new marketing</h2>
+                <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
             </hgroup>
             <ul className='blog__list'>
                 {cards.map((card, index) => (<BlogCard key={index} data={card} />))}

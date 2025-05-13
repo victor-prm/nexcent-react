@@ -1,8 +1,9 @@
 @use '../../style/base.sass'
 @use '../../style/layout'
-.market-fit
+.blog
     @include layout.section-padding($fx-direction: column)
 
     &__list
-        @extend %fxrow
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
         gap: base.$unit-2x
