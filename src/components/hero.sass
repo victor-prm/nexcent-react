@@ -1,0 +1,28 @@
+@use '../style/base'
+@use '../style/layout'
+
+.hero
+    @extend %fxrow
+    gap: base.$unit-4x
+    align-items: center
+    justify-content: space-between
+
+    background: #F5F7FA
+    padding: base.$unit-4x base.$unit-8x
+
+    &__title
+        &-highlight
+            color: #4CAF4F
+
+    hgroup
+        @extend %fxcol
+        gap: base.$unit-2x
+
+    &__btn
+        @extend %standard-button
+
+    &__illustration
+        max-width: 20rem
+        height: 50%
+        width: 50%
+        object-fit: cover

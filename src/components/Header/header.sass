@@ -1,0 +1,23 @@
+@use '../../style/base'
+@use '../../style/layout'
+.header
+    @extend %fxrow
+    justify-content: space-between
+    align-items: center
+    height: base.$unit-8x
+    padding: base.$unit-2x
+
+    &__logo
+        height: base.$unit-3x
+        width: fit-content
+
+    &__btn-wrapper
+        @extend %fxrow
+        gap: base.$unit-1x
+
+    &__nav
+        @extend %fxrow
+        gap: base.$unit-1x
+
+    &__btn
+        @extend %standard-button
