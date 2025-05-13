@@ -1,7 +1,7 @@
-@use '../../style/base'
+@use '../../style/base.sass'
 @use '../../style/layout'
 .market-fit
-    @extend %section-padding
+    @include layout.section-padding($fx-direction: column)
 
     &__list
         @extend %fxrow

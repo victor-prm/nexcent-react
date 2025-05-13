@@ -2,14 +2,13 @@
 @use '../style/layout'
 
 .hero
-    @extend %fxrow
-    @extend %section-padding
+    @include layout.section-padding($fx-direction: row)
+
     gap: base.$unit-4x
     align-items: center
     justify-content: space-between
 
     background: #F5F7FA
-    
 
     &__title
         &-highlight

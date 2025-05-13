@@ -7,8 +7,16 @@
     border-radius: base.$unit-05x
     width: fit-content
 
-%section-padding
+.section-headline
+    @extend %fxcol
+    text-align: center
+    gap: base.$unit-1x
+
+@mixin section-padding($fx-direction)
+    display: flex
+    flex-direction: $fx-direction
     padding: base.$unit-4x base.$unit-8x
+    gap: base.$unit-2x
 
 .btn-primary
     background: base.$color-primary
