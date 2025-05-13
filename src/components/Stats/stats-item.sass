@@ -1,0 +1,23 @@
+@use '../../style/base'
+@use '../../style/layout'
+
+.stats-card
+    @extend %fxrow
+    align-items: center
+    height: base.$unit-8x
+    width: 48%
+    gap: base.$unit-1x
+    padding: base.$unit-2x base.$unit-1x
+
+    &__img
+        width: base.$unit-5x
+        height: base.$unit-5x
+
+    &__text-container
+        @extend %fxcol
+        gap: base.$unit-05x
+    &>*
+        width: fit-content
+
+    &>p
+        font-size: 0.75rem

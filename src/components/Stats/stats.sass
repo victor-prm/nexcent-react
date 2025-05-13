@@ -1,0 +1,16 @@
+@use '../../style/base'
+@use '../../style/layout'
+.stats
+    @include layout.section-padding($fx-direction: row)
+    align-items: center
+    background: base.$gray-050
+
+    &__list
+        width: 34rem
+        @extend %fxrow
+        flex-wrap: wrap
+        gap: base.$unit-2x
+
+    &__text-container
+        @extend %fxcol
+        gap: base.$unit-1x
